@@ -39,4 +39,4 @@ The series of tasks below will help you learn how to use Pulumi configuration an
 
 ## Answers
 
-You will find all the answers [here](answer/).
+You will find all the answers on the `azure-cs/session-2-solution` branch.
