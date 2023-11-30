@@ -17,7 +17,7 @@ return await Pulumi.Deployment.RunAsync(() =>
 
     // TODO 5: Use stack references to retrieve the necessary dependencies
     // TODO 9: Use Pulumi runtime functions to determine the current stack name
-    var referenceStackName = $"{Pulumi.Deployment.Instance.OrganizationName}/network/{Pulumi.Deployment.Instance.StackName}";
+    var referenceStackName = $"{Pulumi.Deployment.Instance.OrganizationName}/pulumi-training-network/{Pulumi.Deployment.Instance.StackName}";
     var stackRef = new Pulumi.StackReference(referenceStackName);
 
     var resourceGroupName = stackRef.RequireOutput("resourceGroupName").Apply(v => v.ToString() ?? throw new ArgumentNullException(nameof(v), "Unable to convert 'resourceGroupName' stack ref into a string"));

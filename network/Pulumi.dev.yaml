@@ -1,4 +1,4 @@
 config:
   azure-native:location: AustraliaEast
-  network:cidrBlock: 10.42.0.0/16
-  network:netmask: 255.255.240.0
+  pulumi-training-network:cidrBlock: 10.42.0.0/16
+  pulumi-training-network:netmask: 255.255.240.0
